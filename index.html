@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Previsão de Pesca</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+🎣 Previsão Inteligente de Pesca
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>📍 Localização</h2>
+<p id="localizacao">Buscando GPS...</p>
+</div>
+
+<div class="card">
+<h2>🌙 Fase da Lua</h2>
+<p id="lua"></p>
+</div>
+
+<div class="card">
+<h2>🌤️ Clima Atual</h2>
+<p id="clima"></p>
+</div>
+
+<div class="card">
+<h2>🌅 Sol</h2>
+<p id="sol"></p>
+</div>
+
+<div class="card">
+<h2>🐟 Atividade dos Peixes</h2>
+<p id="pesca"></p>
+</div>
+
+<div class="card">
+
+<h2>🌙 Tabela Solunar</h2>
+
+<table>
+
+<tr>
+<th>Período</th>
+<th>Horário</th>
+<th>Atividade</th>
+</tr>
+
+<tr>
+<td>Minor</td>
+<td id="minor1"></td>
+<td>Boa</td>
+</tr>
+
+<tr>
+<td>Major</td>
+<td id="major1"></td>
+<td>Muito Boa</td>
+</tr>
+
+<tr>
+<td>Minor</td>
+<td id="minor2"></td>
+<td>Boa</td>
+</tr>
+
+<tr>
+<td>Major</td>
+<td id="major2"></td>
+<td>Excelente</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>🐠 Peixes comuns da região</h2>
+
+<ul>
+
+<li>Pacu</li>
+<li>Piau</li>
+<li>Tilápia</li>
+<li>Matrinxã</li>
+<li>Dourado</li>
+<li>Curimbatá</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📓 Registrar Pescaria</h2>
+
+<input id="peixe" placeholder="Peixe"><br>
+<input id="isca" placeholder="Isca"><br>
+<input id="local" placeholder="Local"><br>
+
+<button onclick="salvar()">Salvar</button>
+
+<ul id="lista"></ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
